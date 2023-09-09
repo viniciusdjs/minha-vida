@@ -1,0 +1,31 @@
+body{
+    background-color: #000;
+
+}
+
+nav ul {
+    padding: 0;
+    columns: 200px 2;
+    column-gap: 30px;
+    padding: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+li a{
+    color: blueviolet;
+}
+
+h2 a{
+    color: blueviolet;
+    position: relative;
+    top: 500px;
+}
+
+h3 a {
+    color: blueviolet;
+    text-decoration: none;
+}

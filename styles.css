@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.netflix-animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.logo{
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: blueviolet;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: logoAnimation 1s linear forwards;
+    position: relative;
+    bottom: 190px;
+
+}
+
+@keyframes logoAnimation {
+0%{
+    opacity: 0;
+    transform: scale(1.2);
+}
+50%{
+    opacity: 1;
+    transform: scale(1.2);
+}
+100%{
+    opacity: 1;
+    transform: scale(1);
+}    
+}
+
+header{
+    /* background-color: #333; */
+    color: blueviolet;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+h2{
+    color: blueviolet;
+}
+
+h2 a{
+    color: blueviolet;
+}
+section {
+    margin-bottom: 30px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
