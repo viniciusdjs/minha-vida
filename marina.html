@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Girassol</title>
+<style>
+  body {
+    background-color: #87CEEB; /* Azul claro para o céu */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .girassol {
+    position: relative;
+    width: 200px; /* Largura da flor */
+    height: 200px; /* Altura da flor */
+  }
+
+  .centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFD700; /* Amarelo para o centro */
+    width: 50px; /* Largura do centro */
+    height: 50px; /* Altura do centro */
+    border-radius: 50%;
+  }
+
+  .petalas {
+    position: absolute;
+    width: 100%; /* Largura das pétalas */
+    height: 100%; /* Altura das pétalas */
+  }
+
+  .petala {
+    position: absolute;
+    background-color: #FFD700; /* Amarelo para as pétalas */
+    border-radius: 50%;
+  }
+
+  .petala:nth-child(1) {
+    top: 0; /* Posição da primeira pétala */
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 40px; /* Largura da pétala */
+    height: 80px; /* Altura da pétala */
+  }
+
+  .petala:nth-child(2) {
+    top: 50%; /* Posição da segunda pétala */
+    left: 0;
+    transform: translate(-100%, -50%);
+    width: 80px; /* Largura da pétala */
+    height: 40px; /* Altura da pétala */
+  }
+
+  .petala:nth-child(3) {
+    bottom: 0; /* Posição da terceira pétala */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 40px; /* Largura da pétala */
+    height: 80px; /* Altura da pétala */
+  }
+
+  .petala:nth-child(4) {
+    top: 50%; /* Posição da quarta pétala */
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 80px; /* Largura da pétala */
+    height: 40px; /* Altura da pétala */
+  }
+</style>
+</head>
+<body>
+  <div class="girassol">
+    <div class="centro"></div>
+    <div class="petalas">
+      <div class="petala"></div>
+      <div class="petala"></div>
+      <div class="petala"></div>
+      <div class="petala"></div>
+    </div>
+  </div>
+</body>
+</html>
